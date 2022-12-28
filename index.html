@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+
+    <title>Document</title>
+</head>
+
+<body class="body">
+    <div class="wrapper">
+        <div>
+            <div class="title">
+                <h1>Skundų forma</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="column1">
+                <div class="column1Content">
+                    <h3>Jūsų vardas*</h3>
+                    <form action="" method="post">
+                        <input class="inp" required size="30" placeholder="Įrašykite savo vardą" name="firstName"
+                            maxlength="30">
+                        <span class="error1"></span>
+                        <h3>Jūsų pavardė</h3>
+                        <input class="inp" size="30" placeholder="Įrašykite savo pavardę" name="secondName"
+                            maxlength="30">
+                        <span class="error2"></span>
+                        <h3>Telefono numeris</h3>
+                        <input class="inp" size="30" placeholder="860000000" name="telephone" maxlength="30">
+                        <span class="error3"></span>
+                        <h3>Jūsų gimimo data</h3>
+                        <input type="date" class="inp" style="width: 230px" size="30" placeholder="1950-01-01" name="gdata" maxlength="30">
+                        <span class="error3"></span>
+                        <h3>Jūsų pastabos*</h3>
+                        <textarea class="textarea" required cols="60" rows="8" placeholder="Pateikite savo pastabas"
+                            name="notes" maxlength="1000"></textarea>
+                        <span class="error4"></span>
+                        <br>
+                    </form>
+                    <input class="button" type="submit" value="Siųsti pastabas">
+                    <!-- iskelus uz "formos", nebeveikia submit mygtukas -->
+                </div>
+            </div>
+            <div class="column2">
+                <div class="image">
+                    <img src="./assets/image/Exclamation_Point.svg.png" alt="image">
+                </div>
+            </div>
+            <div class="column3">
+                <table class="table hide">
+                    <thead>
+                        <tr>
+                            <th colspan="6">Pasiskundusiųjų sąrašas</th>
+                        </tr>
+                        <tr>
+                            <td>Eil. Nr.</td>
+                            <td>Vardas</td>
+                            <td>Pavardė</td>
+                            <td>Telefono numeris</td>
+                            <td>Amžius</td>
+                            <td>Ištrinti</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
